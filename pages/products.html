@@ -66,48 +66,230 @@
         </ul>
       </div>
 
-      <div id="content" class="container d-flex justify-content-center">
-        <div class="w-100 bg_lightgrey p-4">
+      <div id="content" class="container-fluid d-flex justify-content-center align-items-start">
+        <div class="w-100 py-4 px-4">
+          <div class="d-flex justify-content-between">
+            <h1 class="fs-2 px-2">10 prodotti trovati</h1>
+            <div class="side_text">
+              <button type="button" class="btn btn-outline-secondary btn-sm">Esporta</button>
+              <button type="button" class="btn btn-outline-secondary btn-sm">Nuovo</button>
+            </div>
+          </div>
+          
+          <hr class="pb-2">
           <table class="table align-items-center">
+
             <thead>
               <tr>
                 <th scope="col">Nome</th>
                 <th scope="col">Prezzo</th>
-                <th scope="col">Stato</th>
+                <th class="d-none d-sm-table-cell" scope="col">Stato</th>
                 <th scope="col">Azioni</th>
               </tr>
             </thead>
+
             <tbody>
+
               <tr>
                 <th scope="row">
-                  <div class="table_ecc d-flex">
-                    <img src="https://picsum.photos/50" alt="">
-                    <div class="side_text d-flex flex-column mx-4">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
                       <span class="fw-medium">Smartphone Samsung Galaxy S21</span>
-                      <span class="text-secondary fw-normal">Display AMOLED, Fotocamera ultra Wide, Batteria a lunga durata</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Display AMOLED, Fotocamera ultra Wide, Batteria a lunga durata</span>
                     </div>
                   </div>
                 </th>
-                <td class="fw-medium">799.00 &euro;</td>
-                <td>
-                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold ">&checkmark;</span>
+                <td class="fw-medium">799.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
                 </td>
-                <td class="px-1">
+                <td class="px-1 d-flex d-sm-table-cell">
                   <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
                   <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
                 </td>
               </tr>
+
               <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Apple MacBook Pro 13"</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Processore M1, SSD ultraveloce, Display Retina</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">1299.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
               </tr>
+
               <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Smartwatch Apple Watch Series 6</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Monitoraggio attività, Misurazione ossigeno nel sangue, Display Alway-On</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">429.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
               </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Auricolari Wireless Apple AirPods Pro</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Cancellazione attiva del rumore, Resistenza all'acqua e al sudore</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">279.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Console Sony PlayStation 5</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Gaming ad alta definizione, Tempi di caricamento rapidi, Supporto per giochi 4K</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">499.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Monitor Gaming ASUS ROG Strix XG27UQ</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Schermo 4K UHD, Frequenza di aggiornamento 144Hz, Tecnologia HDR</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">999.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Stampante Multifunzione HP LaserJet Pro MFP M28w</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Stampa, Scansione, Copia, Connessione Wi-Fi</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">159.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell d-flex">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Router Wi-Fi Mesh TP-link Deco X20</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Copertura fino a 560mq, velocità fino a 1800Mbps, Gestione tramite app</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">199.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">SSD NVMe Western Digital Black SN850</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Capacità 1TB, Velocità di lettura fino a 7000MB/s, Tecnologia PCIe Gen4</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">229.00&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class="d-flex">
+                    <img style="height:50px;" src="https://picsum.photos/50" alt="">
+                    <div class="side_text d-flex flex-column mx-4 p-0">
+                      <span class="fw-medium">Mouse Gaming Logitech G502 HERO</span>
+                      <span class="text-secondary fw-normal d-none d-xl-table-cell">Sensore HERO 25k, 11 pulsanti programmabili, Peso personalizzabile</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="fw-medium">79.99&euro;</td>
+                <td class="d-none d-sm-table-cell">
+                  <span class="border border-success rounded-circle py-1 px-2 text-success fw-bold">&checkmark;</span>
+                </td>
+                <td class="px-1 d-flex d-sm-table-cell">
+                  <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-pencil"></i></button>
+                  <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
