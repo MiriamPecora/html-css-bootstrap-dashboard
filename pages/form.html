@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Nuovo prodotto</title>
+      <title>Sponsorizzazioni</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <link rel="stylesheet" href="../stylesheets/styles.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,7 +30,7 @@
 
     <div class="d-flex">
       <div id="sidebar" class="d-flex p-3 text-white bg-dark d-none d-sm-block" style=" width: 270px; min-height: 100vh;">
-        <span class="fs-4">Bootstrap Dashboard</span>
+        <span class="fs-5">Bootstrap Dashboard</span>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
@@ -65,14 +65,85 @@
           </li>
         </ul>
       </div>
-    </div>
+      
+      <div id="content" class="container-fluid text-center d-flex justify-content-center align-items-start">
+        <div class="w-100 bg_lightgrey pt-3 px-5">
 
-    <div id="content" class="container-fluid text-center d-flex justify-content-center align-items-center">
-      <div class="w-100 bg_lightgrey p-4">
-        
+          <div class="p-3 pb-md-4 mx-auto text-center">
+            <h1 class="fs-3">Crea nuovo prodotto</h1>
+            <p class="fs-5">I campi contrassegnati con un asterisco (*) sono obbligatori. <br>Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione.</p>
+          </div>
+          
+          <form action="">
+
+            <div class="w-100">
+              <div class="row">
+                <div class="col-12 col-md-8 d-block d-sm-flex justify-content-between">
+                  <p>Nome</p>
+                  <input class="w-75 mb-3 px-2" placeholder="Samsung Galaxy 10 Plus" type="text">
+                </div>
+                <div class="col-12 col-md-8 d-block d-sm-flex justify-content-between">
+                  <p>Nome</p>
+                  <input class="w-75 mb-3 px-2" placeholder="99.00" type="text">
+                </div>
+                <div class="col-12 col-md-8 d-block d-sm-flex justify-content-between">
+                  <p>Nome</p>
+                  <select class="w-75 mb-3 px-2 py-1" aria-label="Default select example">
+                    <option selected>---Seleziona---</option>
+                    <option value="1">Samsung</option>
+                    <option value="2">Sony</option>
+                    <option value="3">Xiaomi</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-8 d-block d-sm-flex">
+                  <div class="w-100 mb-3">
+                    <textarea class="form-control" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" id="floatingTextarea2" style="height: 100px"></textarea>
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 d-block d-sm-flex">
+                  <div class="w-100 mb-3">
+                      <input class="form-control" type="file" id="formFile">
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 d-block d-sm-flex">
+                  <div class="mb-3">
+                    <ul class="list-group list-group-horizontal">
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                        <label class="form-check-label" for="firstRadio">Disponibile</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                        <label class="form-check-label" for="secondRadio">Esaurito</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                        <label class="form-check-label" style="width: 130px;" for="thirdRadio">Fuori produzione</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="fourthRadio">
+                        <label class="form-check-label" style="width: 60px;" for="thirdRadio">In arrivo</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 d-block d-sm-flex">
+                  <div class="mb-3">
+                      <button class="btn btn-primary ">Salva</button>
+                  </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                  ciao
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
       </div>
     </div>
-
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
