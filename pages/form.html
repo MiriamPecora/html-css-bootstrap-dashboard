@@ -67,7 +67,7 @@
       </div>
       
       <div id="content" class="container-fluid text-center d-flex justify-content-center align-items-start">
-        <div class="w-100 bg_lightgrey pt-3 px-5">
+        <div class="w-100 pt-3 px-5">
 
           <div class="p-3 pb-md-4 mx-auto text-center">
             <h1 class="fs-3">Crea nuovo prodotto</h1>
@@ -77,64 +77,96 @@
           <form action="">
 
             <div class="w-100">
-              <div class="row">
-                <div class="col-12 col-md-8 d-block d-sm-flex justify-content-between">
-                  <p>Nome</p>
-                  <input class="w-75 mb-3 px-2" placeholder="Samsung Galaxy 10 Plus" type="text">
-                </div>
-                <div class="col-12 col-md-8 d-block d-sm-flex justify-content-between">
-                  <p>Nome</p>
-                  <input class="w-75 mb-3 px-2" placeholder="99.00" type="text">
-                </div>
-                <div class="col-12 col-md-8 d-block d-sm-flex justify-content-between">
-                  <p>Nome</p>
-                  <select class="w-75 mb-3 px-2 py-1" aria-label="Default select example">
-                    <option selected>---Seleziona---</option>
-                    <option value="1">Samsung</option>
-                    <option value="2">Sony</option>
-                    <option value="3">Xiaomi</option>
-                  </select>
-                </div>
-                <div class="col-12 col-md-8 d-block d-sm-flex">
-                  <div class="w-100 mb-3">
-                    <textarea class="form-control" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" id="floatingTextarea2" style="height: 100px"></textarea>
+              <div class="row d-flex justify-content-between">
+                <div class="col-12 col-md-7">
+                  <div class="col-12 d-block d-sm-flex justify-content-between">
+                    <p>Nome</p>
+                    <input class="rounded border border-secondary-subtle w-75 mb-3 px-2" placeholder="Samsung Galaxy 10 Plus" type="text">
                   </div>
-                </div>
-                <div class="col-12 col-md-8 d-block d-sm-flex">
-                  <div class="w-100 mb-3">
-                      <input class="form-control" type="file" id="formFile">
+                  <div class="col-12 d-block d-sm-flex justify-content-between">
+                    <p>Prezzo</p>
+                    <input class="rounded border border-secondary-subtle w-75 mb-3 px-2" placeholder="99.00" type="number">
                   </div>
-                </div>
-                <div class="col-12 col-md-8 d-block d-sm-flex">
-                  <div class="mb-3">
-                    <ul class="list-group list-group-horizontal">
-                      <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
-                        <label class="form-check-label" for="firstRadio">Disponibile</label>
-                      </li>
-                      <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
-                        <label class="form-check-label" for="secondRadio">Esaurito</label>
-                      </li>
-                      <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-                        <label class="form-check-label" style="width: 130px;" for="thirdRadio">Fuori produzione</label>
-                      </li>
-                      <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="fourthRadio">
-                        <label class="form-check-label" style="width: 60px;" for="thirdRadio">In arrivo</label>
-                      </li>
-                    </ul>
+                  <div class="col-12 d-block d-sm-flex justify-content-between">
+                    <p>Nome</p>
+                    <select class="rounded border border-secondary-subtle w-75 mb-3 px-2 py-1" aria-label="Default select example">
+                      <option selected>---Seleziona---</option>
+                      <option value="1">Samsung</option>
+                      <option value="2">Sony</option>
+                      <option value="3">Xiaomi</option>
+                    </select>
                   </div>
-                </div>
-                <div class="col-12 col-md-8 d-block d-sm-flex">
-                  <div class="mb-3">
-                      <button class="btn btn-primary ">Salva</button>
+                  <div class="col-12 d-block d-sm-flex">
+                    <div class="w-100 mb-3">
+                      <textarea class="form-control" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 d-block d-sm-flex">
+                    <div class="w-100 mb-3">
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                  </div>
+                  <div class="col-12 d-block d-sm-flex">
+                    <div class="mb-3">
+                      <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                          <label class="form-check-label" for="firstRadio">Disponibile</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                          <label class="form-check-label" for="secondRadio">Esaurito</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                          <label class="form-check-label" style="width: 130px;" for="thirdRadio">Fuori produzione</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="fourthRadio">
+                          <label class="form-check-label" style="width: 60px;" for="thirdRadio">In arrivo</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 d-none d-sm-flex">
+                    <div class="mb-3">
+                        <button class="btn btn-primary ">Salva</button>
+                    </div>
                   </div>
                 </div>
                 
-                <div class="col-12 col-md-4">
-                  ciao
+                <div class="col-12 col-md-5">
+                  <ul class="list-group" style="text-align: left;">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      <label class="form-check-label" for="firstCheckbox"><strong>fotocamera principale </strong><br>foto di alta qualità e registrare video nitidi</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      <label class="form-check-label" for="secondCheckbox"><strong>schermo OLED </strong><br>offre colori vividi per un'esperienza visiva straordinaria</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      <label class="form-check-label" for="thirdCheckbox"><strong>processore Octa-core </strong><br>prestaziooni fluide e veloci per eseguire le applicazioni più esigenti</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      <label class="form-check-label" for="thirdCheckbox"><strong>ricarica wireless </strong><br>consente di ricaricare lo smartphone comodamente senza l'uso di cavi</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      <label class="form-check-label" for="thirdCheckbox"><strong>connessione 5G </strong><br>navigazione ultra veloce e streaming senza interruzioni</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      <label class="form-check-label" for="thirdCheckbox"><strong>tecnologia NFC </strong><br>per effettuare pagamenti senza contatto</label>
+                    </li>
+                  </ul>
+                  <div class="col-12 d-flex d-sm-none">
+                    <div class="my-3">
+                        <button class="btn btn-primary ">Salva</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
